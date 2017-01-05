@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .test{
+            width: 150px;
+            height: 150px;
+            margin: 100px auto;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .img_first{
+            background: url("img/test.png") no-repeat;
+            background-size: 100% 100%;
+            width: 100%;
+            height: 100%;
+            transform-origin: center;
+            animation-name: rotate;
+            animation-duration: 1000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+
+        @keyframes rotate {
+            from{
+                transform: rotate(0);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes hanging {
+            from{
+                transform: translateY(-3px);
+            }
+            to{
+                transform: translateY(3px);
+            }
+        }
+
+        .img_first, .img_second{
+            position: absolute;
+        }
+
+        .img_second{
+            background: url("img/test2.png") no-repeat;
+            background-size: 100% 100%;
+            top: 26.65%;
+            left: 26.65%;
+            width: 46.7%;
+            height: 46.7%;
+            animation-name: rotate;
+            animation-duration: 1000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        .test:hover > .img_second{
+            animation-duration: 300ms;
+        }
+
+        .test:hover > .img_first{
+            animation-duration: 500ms;
+        }
+
+        .test:hover {
+            animation-name: hanging;
+            animation-duration: 100ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction:alternate;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+<div class="test">
+    <div class="img_first"></div>
+    <div class="img_second"></div>
+</div>
+
+
+
+</body>
+</html>
