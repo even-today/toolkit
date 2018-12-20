@@ -1,0 +1,26 @@
+{
+  "name": "toolkit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ext .js . "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elson8080/toolkit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Elson8080/toolkit/issues"
+  },
+  "homepage": "https://github.com/Elson8080/toolkit#readme",
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb-base": "^13.1.0"
+  },
+  "dependencies": {
+    "eslint-plugin-import": "^2.14.0"
+  }
+}

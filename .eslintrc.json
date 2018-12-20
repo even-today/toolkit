@@ -1,0 +1,14 @@
+{
+    "extends": "airbnb-base",
+    "rules": {
+        "no-console": "off",
+        "no-await-in-loop": "off",
+        "no-param-reassign": ["error", {
+        	"props": false
+        }],
+        "no-trailing-spaces": ["error", { "skipBlankLines": true }],
+        "no-restricted-syntax": ["error", "ForInStatement", "LabeledStatement", "WithStatement"],
+        "no-underscore-dangle": "off",
+        "consistent-return": "off"
+    }
+}
