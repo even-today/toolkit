@@ -5,6 +5,7 @@ module.exports = {
   async batch({
     batchNumber = 1, batchList = [], logging = true,
   }) {
+    const startTime = new Date().getTime();
     if (Number.isNaN(batchNumber)) return { error: 'batchNumber should be a number' };
     if (!Array.isArray(batchList)) return { error: 'batchList should be an array' };
     const tasks = Object.assign([], batchList);
@@ -25,6 +26,8 @@ module.exports = {
       }
     }
     console.log('============= 异步任务处理完毕 =============');
+    const endTime = new Date().getTime();
+    console.log(`共耗时 ${endTime - startTime} ms`);
     return null;
   },
 };
