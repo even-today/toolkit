@@ -48,7 +48,7 @@ function createServer(request, response) {
   app.handle(request, response, async (req, res) => {
     console.log('handle the request and response');
     res.statusCode = 301;
-    return res.end('ok');
+    return res.end('teststet');
   });
 }
 
